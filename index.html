@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador JS</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="icon" type="image/png" href="imagenes/llaves.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <div id="contenedor">
+      <div id="parte-izquierda">
+        <div id="logo">
+          <img src="imagenes/logo.png" alt="" />
+        </div>
+        <div class="mensaje">
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+            placeholder="Ingresa el texto a encriptar"
+          ></textarea>
+        </div>
+        <p id="advertencia"><i class="fas fa-exclamation-triangle"></i>&nbsp;&nbsp;Solo se pueden encriptar mensajes sin tildes ni caracteres especiales</p>
+        <div class="botones">
+          <button id="encriptar">Encriptar mensaje</button>
+          <button id="desencriptar">Desencriptar mensaje</button>
+        </div>
+      </div>
+      <div id="parte-derecha">  
+            <div id="encriptado"><img id="muñeco" src="imagenes/Muñeco.png" alt="" />
+            <p id="texto1">Ningún mensaje fue encontrado</p>
+            <p id="texto2">Ingresa el texto que desees encriptar o desencriptar</p>
+          </div>
+            <p id="texto-encriptado"></p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
